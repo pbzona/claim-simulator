@@ -38,16 +38,18 @@ def send_event_data():
 
 # Send a lot of events for a bunch of random contexts
 def create_fake_data():
-    for i in range(random.randint(100, 400)):
+    for i in range(random.randint(10, 40)):
         send_event_data()
 
 # Loop over a couple times to send several delayed iterations of fake data
-number_of_iterations = 10
+number_of_iterations = 1500
 
 for i in range(number_of_iterations):
-    time_to_wait = random.randint(10, 30)
+    time_to_wait = random.randint(25, 45)
     
     create_fake_data()
+    print(f'Finished iteration: {i}')
+    
     time.sleep(time_to_wait)
 
 ld_client.close()

@@ -19,7 +19,7 @@ class Claim:
 
         # Time to resolution will be a random to represent hours to resolve claim
         time_min = random.randint(3, 10)
-        time_max = random.randint(375, 550)
+        time_max = random.randint(300, 550)
         self.resolution_time = random.randint(time_min, time_max)
         
         # Choose a random state

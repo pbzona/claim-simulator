@@ -9,3 +9,5 @@ To use:
 2. Copy the contents of `.env.example` to a file called `.env`. Fill in the new file with your SDK key.
 
 3. Modify values in the `helpers/claim.py` file to affect randomness of the simulation
+
+4. Run `app.py`
